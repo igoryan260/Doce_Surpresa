@@ -439,4 +439,177 @@ footer div#copy > span{
 
 }
 
+@media (max-width: 425px) {  
+    body{
+        overflow-x: hidden;
+    }
+    
+    header {
+        background: none;
+    }
+
+    header > div#sobreposition {
+        width: 100%;
+    }
+
+    header > nav {
+        padding: 55px 20px 0 20px;
+        width: 375px;
+    }
+
+    header > nav > div#opcoesMenu {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        justify-content: space-evenly;
+    }
+
+    header > nav > div#opcoesMenu > a{
+        font-size: 13pt;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    header > nav > div#logo {
+        width: max-content;
+        height: max-content;
+    }
+
+    header > nav > div#logo > a > img {
+        width: 100px;
+    }
+
+    /*CHAMADA PARA AÇÃO *********************************/
+
+    header > div#chamadaAcao {
+        width: 310px;
+        margin: 100px 10px;
+    }
+
+    header > div#chamadaAcao > h1 {
+        font-size: 25pt;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    header > div#chamadaAcao > button {
+        left: 20px;
+        top: 200px;
+        font-size: 15pt;
+        width: 250px;
+    }
+
+    /* SECTION CONHECA *************************/
+
+    section#conheca {
+        margin: 50px 15px 0px 15px;
+    } 
+
+    section#conheca > h2 {
+        font-size: 20pt;
+    }
+
+    section#conheca > p {
+        font-size: 15pt;
+        max-width: 280px;
+    }
+
+    section#conheca > figure {
+        grid-column: 1;
+        grid-row: 3;
+        margin-top: 0;
+    }
+
+    section#conheca > figure > img {   
+        width: 280px;
+    }
+
+    section#conheca > figure::after {
+        content: url(../images/sombra-pessoas-escala-display-375px.png);
+        left: 61px;
+        top: -61px;        
+    }
+
+    /*SECTION CARDÁPIO *************************************/
+
+    section#cardapio {
+        margin: 50px 15px 0px 15px;
+        grid-template-columns: 1fr;
+    }
+
+    section#cardapio > h2 {
+        font-size: 20pt;  
+        grid-column: 1;
+        justify-self: start;
+    }
+
+    section#cardapio > figure > img {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    
+    section#cardapio  > ul{
+        grid-column: 1;
+        grid-row: 3;
+        margin-left: 35px;        
+    }
+
+    section#cardapio  > ul > li{
+        font-size: 15pt;
+    }
+
+    /*FOOTER **************************************************/
+
+    footer {
+        margin-top: 30px;
+        max-width: 375px;
+    }
+
+    footer #contatoSugestoes{
+        width: max-content;
+    }
+
+    footer #contatoSugestoes > h3:first-child {
+        grid-column: 1;
+        grid-row: 1;                   
+    }
+
+    footer #contatoSugestoes > h3 {
+        grid-column: 1;
+        grid-row: 3;       
+        font-size: 15pt;
+        text-align: center;        
+    }
+
+    footer #contatoSugestoes > p:first-child {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    footer #contatoSugestoes > p:last-child {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    /*COPYRIGHT ******************************************/            
+    footer div#copy {        
+        width: 375px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    footer div#copy > img {
+        margin-bottom: 50px;
+    }
+
+    footer div#copy > span {
+       font-size: 15pt;
+       text-align: center;
+    }
+
+}
+
+
        
