@@ -364,4 +364,118 @@ footer div#copy > span{
     }
 }
 
-       
+@media (max-width: 768px){
+        
+    header > div#chamadaAcao > h1 {
+        font-size: 30pt;
+        text-align: center;
+    }
+
+    header > div#chamadaAcao > button {
+        font-size: 20pt;
+        left: 25px;
+        top: 155px;
+        width: 320px;
+    }
+
+    /*SECTION CONHEÇA*/
+    section#conheca {
+        margin-top: 90px;
+    }
+
+    section#conheca > figure {
+        grid-column: 1;
+        grid-row: 3;
+        margin-top: 0px;
+    }
+
+    /*SECTION CARDAPIO*/
+
+    section#cardapio > h2 {
+        grid-column: 1;
+        justify-self: flex-start;
+    }
+
+    section#cardapio > ul {
+        grid-row: 3;
+        grid-column: 1; 
+        margin-left: 20px;       
+    }
+
+    /*FOOTER*/
+    footer {
+        margin-top: 90px;
+    }
+
+    footer div#copy {
+        flex-direction: column;
+    }
+
+    footer div#copy span {
+        margin-top: 20px;
+        max-width: 50%;
+        text-align: center;
+    }
+}
+   
+@media (max-width: 610px){
+    header {
+        background-image: none;
+    }
+
+    header > nav {        
+        padding: 20px 40px 0px;
+    }
+
+    header > nav > div#opcoesMenu {
+        flex-direction: column;
+        width: 110px;
+    }
+
+    header > nav > div#opcoesMenu > a{
+        margin: 0;   
+        align-self: start;     
+    }
+
+    header > nav > div#logo > a > img {
+        width: 100px;
+    }
+
+    header div#chamadaAcao {       
+        margin: 130px auto;
+        width: 300px;
+    }
+
+    header > div#chamadaAcao > button {
+        font-size: 15pt;
+        left: 30px;
+        top: 220px;
+        width: 250px;
+    }
+
+    /*SECTION CONHEÇA*/
+    section#conheca {
+        margin: 205px 20px 0px 20px;
+    }
+
+    section#conheca > figure::after {
+        content: none;
+    }
+
+    /*FOOTER*/
+
+    footer > div#contatoSugestoes > h3 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    footer > div#contatoSugestoes > p#location {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    footer div#copy {
+        width: auto;
+        margin: 0 auto;  
+    }
+}
