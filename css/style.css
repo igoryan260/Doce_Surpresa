@@ -458,11 +458,25 @@ footer div#copy > span{
         margin: 205px 20px 0px 20px;
     }
 
+    section#conheca > p {        
+        width: auto;
+    }
+
     section#conheca > figure::after {
         content: none;
     }
 
+    /*SECTION CARDAPIO*/
+    section#cardapio {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     /*FOOTER*/
+
+    footer > div#contatoSugestoes {
+        width: auto;
+    }
 
     footer > div#contatoSugestoes > h3 {
         grid-column: 1;
